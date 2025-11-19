@@ -1,9 +1,12 @@
+version: '3'
 services:
   bot:
     build: .
+    container_name: tg-bot-custom
     restart: always
     ports:
-      - "8080:3000"
+      # 左边是 VPS 端口(变量)，右边是容器端口(固定3000)
+      - "${HOST_PORT}:3000"
     volumes:
       - ./data:/app/data
     env_file:

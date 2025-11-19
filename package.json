@@ -1,0 +1,11 @@
+{
+  "name": "tg-bot-vps",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^9.4.0",
+    "dotenv": "^16.4.0"
+  },
+  "scripts": {
+    "start": "node adapter.js"
+  }
+}
